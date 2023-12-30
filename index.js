@@ -27,6 +27,12 @@ button.addEventListener('click', () => {
         modalWindow.style.opacity = 1
     }, 500)
 })
+modalWindow.addEventListener('click', () => {
+    modalWindow.style.opacity = 0
+    setTimeout(() => {
+        modalWindow.style.display = 'none'
+    }, 500)
+})
 
 document.addEventListener('DOMContentLoaded', () => {
     background.style.transform = 'translateX(50%)'
